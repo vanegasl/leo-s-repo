@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>First</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script>
+			function moveIt() {
+				var coords = new Array(10,50,100,130,175,225,260,300,320,350);
+				var colors = new Array("#0066AA", "#0000FF","#FF0000", "#00FF00");
+				
+				var x = coords[Math.floor((Math.random()*10))];
+				var y = coords[Math.floor((Math.random()*10))];
+				var color = colors[Math.floor((Math.random()*4))];
+				
+				$("#elusiveText").css({"top": y + "px", "left": x +"px", "background-color":color});
+				$("#elusiveText2").css({"top": x + "px", "left": y +"px"});
+			}
+		</script>
+		<style>
+			span {
+				background-color: #0066AA;
+				color: #FFFFFF;
+				font-weight: bold;
+				border-color: #C0C0C0;
+				border: 2px solid;
+				border-radius: 5px;
+				padding: 3px;
+				position: absolute;
+				top: 150px;
+				left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<span id="elusiveText" onmouseover="moveIt()">Click Me</span>
+		<span id="elusiveText2" onmouseover="moveIt()">Click Me</span>
+	</body>
+</html>
