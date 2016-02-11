@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<script>
+$(window).on("navigate", function (event, data) {
+    var direction = data.state.direction;
+    if ( !! direction) {
+        alert(direction);
+    }
+});
+</script>
+</head>
+<body>
+
+<div data-role="page" id="p1">
+<a href="#p2">goto page 2</a> and then use browser's navigation.</div>
+<div data-role="page" id="p2">Page 2</div>
+
+</body>
+</html>
