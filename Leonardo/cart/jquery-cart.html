@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<link
+	href="http://www.jqueryrain.com/wp-content/plugins/wp-bar/wpbar.css"
+	rel="stylesheet" type="text/css" />
+<script type='text/javascript'
+	src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js?ver=3.4.2'></script>
+<script>
+	$(document).ready(function() {
+		$("#closead").click(function() {
+			$("#ads").css("display", "none");
+		});
+
+		$frameheight = $(window).height() - 40;
+		$(".sourceView").css("height", $frameheight);
+
+		$(window).resize(function() {
+			$frameheight = $(window).height() - 40;
+			$(".sourceView").css("height", $frameheight);
+		});
+
+	});
+</script>
+<head>
+	<meta charset="utf-8" />
+	<title>MyShopping Cart</title>
+	<link rel="stylesheet" href="_css/main.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.11.custom.css" type="text/css" media="screen" />
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<header>
+				<h1><a href="/">Derick Vaden - SWA</a></h1>
+			</header>
+
+			<section id="products">
+				<h2>Vaden Merchandise</h2>
+				<p>Welcome to the Vaden Store.  Drag products that you wish to purchase into the shopping cart area on the right.</p>
+				<div class="product" id="0001" title="jQuery Logo">
+					<img src="_images/tshirt-0001.jpg" width="165" height="198" alt="jQuery T-Shirt"/>
+					<div class="product-info">
+						<h2 class="product-title">jQuery Logo</h2>
+						<p class="id">0001</p>
+						<p class="product-type">T-Shirt</p>
+						<p class="product-description">Flaunt your jQuery expertise in the most obvious way possible, with the official logo on your chest.</p>
+					</div>
+					<p class="price">$14.99</p>	
+				</div>
+				<div class="product" id="0002" title="jQuery Method Cloud">
+					<img src="_images/tshirt-0002.jpg" width="165" height="198" alt="jQuery T-Shirt"/>
+					<div class="product-info">
+						<h2 class="product-title">jQuery Method Cloud</h2>
+						<p class="id">0002</p>
+						<p class="product-type">T-Shirt</p>
+						<p class="product-description">Why bother with jQuery cheat sheets when you could wear one?  Of course, it would be upside-down.</p>
+					</div>
+					<p class="price">$19.99</p>	
+				</div>
+				<div class="product" id="0003" title="I.Love(jQuery)">
+					<img src="_images/tshirt-0003.jpg" width="165" height="198" alt="jQuery T-Shirt"/>
+					<div class="product-info">
+						<h2 class="product-title">I.Love(jQuery)</h2>
+						<p class="id">0003</p>
+						<p class="product-type">T-Shirt</p>
+						<p class="product-description">Running this shirt's method will automatically send a thank you email to John Resig.</p>
+					</div>
+					<p class="price">$17.99</p>	
+				</div>
+				<div class="product" id="0004" title="Ipsum Lorem 4Ever">
+					<img src="_images/tshirt-0004.jpg" width="165" height="198" alt="jQuery T-Shirt"/>
+					<div class="product-info">
+						<h2 class="product-title">Ipsum Lorem 4Ever</h2>
+						<p class="id">0004</p>
+						<p class="product-type">T-Shirt</p>
+						<p class="product-description">You know you use it, so why try to deny it?  Proclaim your love for ipsum lorem proudly with this stylish branding shirt.</p>
+					</div>
+					<p class="price">$16.99</p>	
+				</div>
+				<div class="product" id="0005" title="Chainmail">
+					<img src="_images/tshirt-0005.jpg" width="165" height="198" alt="jQuery T-Shirt"/>
+					<div class="product-info">
+						<h2 class="product-title">Chainmail</h2>
+						<p class="id">0005</p>
+						<p class="product-type">T-Shirt</p>
+						<p class="product-description">When you're an amazing developer, you gotta protect yourself from danger.  This chainmail t-shirt will make sure you are the only global variable standing.</p>
+					</div>
+					<p class="price">$59.99</p>	
+				</div>
+			</section>
+			
+			<aside>
+				<div id="followbox"></div>
+				<div id="cart">
+					<h2>Your Shopping Cart</h2>
+					<p>As you browse through the product listing, you can add your items to the shopping cart by dragging them into the box below.</p>
+					<div class="dropzone"><p>Drag items here to add them to your cart.</p></div>
+					<div class="cart-content">
+						<ol>
+							<li class="placeholder">You have no items in your cart.</li>
+						</ol>
+					</div>
+					<div class="empty">Remove all items from cart.</div>
+				</div>
+			</aside>
+			<div id="dialog-confirm" title="Empty Cart">Are you sure you want to empty the contents of your shopping cart.</div>		
+			<footer>
+				<p>&copy;2011 Derick Vaden - Scripting for Web Applications - Full Sail University</p>
+			</footer>
+		</div>
+	</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="_js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="_js/jquery.jfollow.js"></script>
+<script type="text/javascript" src="_js/script.js"></script>
+<script type="text/javascript" src="_js/cart.js"></script>
+</body>
+</html>
